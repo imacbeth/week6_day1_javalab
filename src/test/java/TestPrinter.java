@@ -17,5 +17,18 @@ public class TestPrinter {
             assertEquals(50, printer.getSheets());
     }
 
+        @Test
+        public void print(){
+        printer.print(5, 2);
+        assertEquals(40, printer.getSheets());
+      }
+
+      @Test
+    public void refillPrinter(){
+        printer.refill();
+          assertEquals(50, printer.getSheets());
+
+      }
+
 
 }
