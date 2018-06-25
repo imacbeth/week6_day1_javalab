@@ -10,7 +10,7 @@ public class Printer {
     }
 
      public int print( int copies,  int pages){
-         if(this.sheets <= (pages * copies))
+         if(this.sheets >= (pages * copies))
          {return this.sheets -= (pages * copies);
          } else {
              return this.sheets;
