@@ -15,15 +15,16 @@ public class Printer {
         return this.tonerVolume;
     }
 
-     public int print( int copies,  int pages){
-         if(this.sheets >= (pages * copies))
-         {return this.sheets -= (pages * copies);
-         } else {
-             return this.sheets;
+     public void print( int copies,  int pages){
+         if(this.sheets >= (pages * copies)) {
+             this.sheets -= (pages * copies);
+             this.tonerVolume -= (pages * copies);
          }
      }
 
      public int refill(){
         return this.sheets = 50;
      }
+
+
 }
