@@ -22,8 +22,8 @@ public class Printer {
          }
      }
 
-     public int refill(){
-        return this.sheets = 50;
+     public void refill(int numberOfSheets){
+        this.sheets += numberOfSheets;
      }
 
 
